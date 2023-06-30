@@ -33,8 +33,8 @@ function Requests(){
                         <h3>{request.feeling}</h3> <br />
                         <p>{request.date}</p> <br />
                         <p>{request.time}</p> <br />
-                        {/* <p>{request.phone}</p>
-                        <p>{request.language}</p> */}
+                        <p>{request.phone}</p>
+                        <p>{request.language}</p>
                         <Link to={`/requests/${request._id}`}>
                         <button>details</button>
                         </Link>
