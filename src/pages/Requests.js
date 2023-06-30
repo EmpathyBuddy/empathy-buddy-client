@@ -36,7 +36,7 @@ function Requests(){
                         {/* <p>{request.phone}</p>
                         <p>{request.language}</p> */}
                         <Link to={`/requests/${request._id}`}>
-                        <button>Offer Empathy</button>
+                        <button>Details</button>
                         </Link>
 
                         <hr></hr>
