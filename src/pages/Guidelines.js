@@ -1,7 +1,8 @@
 function Guidelines(){
     return(
         <div>
-            guidelines page
+            Buddy up! <br />
+            start giving empathy!
         </div>
     )
 }

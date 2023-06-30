@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-
+import { Link } from "react-router-dom";
 const API_URL = "http://localhost:5005";
 
 function Requests(){
@@ -30,7 +30,14 @@ function Requests(){
                 // console.log(request);
                 return(
                     <div key={request._id}>
-                        <h3>{request.feeling}</h3>
+                        <h3>{request.feeling}</h3> <br />
+                        <p>{request.date}</p> <br />
+                        <p>{request.time}</p> <br />
+                        {/* <p>{request.phone}</p>
+                        <p>{request.language}</p> */}
+                        <Link to={`/requests/${request._id}`}>
+                        <button>details</button>
+                        </Link>
 
                         <hr></hr>
                     </div>
