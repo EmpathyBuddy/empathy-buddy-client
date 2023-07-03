@@ -7,7 +7,6 @@ const API_URL = "http://localhost:5005";
 function EditRequest(){
     const [ feeling, setFeeling] = useState('');
     const [ date, setDate ] = useState('');
-    const [ time, setTime ] = useState('');
     const [ phone, setPhone] = useState('');
     const [ language, setLanguage] = useState('');
 
@@ -23,7 +22,6 @@ function EditRequest(){
             const oneRequest = response.data;
             setFeeling(oneRequest.feeling);
             setDate(oneRequest.date);
-            setTime(oneRequest.time);
             setPhone(oneRequest.phone);
             setLanguage(oneRequest.language);
         })
@@ -37,7 +35,7 @@ function EditRequest(){
     const handleFormSubmit = (e) => {
         e.preventDefault();
         
-        const requestBody = {feeling, date, time, phone, language}
+        const requestBody = {feeling, date, phone, language}
 
         axios
           .put(`${API_URL}/api/requests/${requestId}`, requestBody)
@@ -72,19 +70,12 @@ function EditRequest(){
                 
                 <label>Date:</label>
                 <input
-                    type="text"
+                    type="datetime-local"
                     name="date"
                     value={date}
                     onChange={(e)=>setDate(e.target.value)}/>
                     <br></br>
-                
-                <label>Time:</label>
-                <input
-                    type="text"
-                    name="time"
-                    value={time}
-                    onChange={(e)=>setTime(e.target.value)} />
-                <br></br>
+            
                 
                 <label>Phone:</label>
                 <input

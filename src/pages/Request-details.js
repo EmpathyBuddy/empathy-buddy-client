@@ -39,7 +39,6 @@ return(
    
     <h3>{request.feeling}</h3>
     <p>Would love to talk on :{request.date}</p>
-    <p> at {request.time} hours</p>
     <p>We can call on this number {request.phone}</p>
     <p>I speak {request.language}</p>
    
