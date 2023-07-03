@@ -2,7 +2,6 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import AddRequest from "../components/AddRequest";
-import Ale from "../components/Ale"
 const API_URL = "http://localhost:5005";
 
 function Requests(){
@@ -30,7 +29,6 @@ function Requests(){
 
 
             <h1>Requests List:</h1>
-            <Ale />
             <AddRequest refreshRequests = {getAllRequests}/>
             <hr></hr>
             {requestsList.map((request)=>{
