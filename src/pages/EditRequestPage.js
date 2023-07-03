@@ -1,5 +1,5 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
 const API_URL = "http://localhost:5005";
@@ -9,6 +9,8 @@ function EditRequest(){
     const [ date, setDate ] = useState('');
     const [ phone, setPhone] = useState('');
     const [ language, setLanguage] = useState('');
+
+    const storedToken = localStorage.getItem('authToken')
 
     const {requestId} = useParams();
     const navigate = useNavigate();
@@ -37,7 +39,7 @@ function EditRequest(){
         
         const requestBody = {feeling, date, phone, language}
         axios
-          .put(`${API_URL}/api/requests/${requestId}`, requestBody)
+          .put(`${API_URL}/api/requests/${requestId}`, requestBody, {headers: {Authorization: `Bearer ${storedToken}`}})
           .then((response) => {
             navigate(`/requests/${requestId}`)
           })
@@ -47,7 +49,7 @@ function EditRequest(){
     // Delete Request
     const deleteRequest = () => {
         axios
-          .delete(`${API_URL}/api/requests/${requestId}`)
+          .delete(`${API_URL}/api/requests/${requestId}`, {headers: {Authorization: `Bearer ${storedToken}`}})
           .then(()=>{
             navigate('/requests');
           })
