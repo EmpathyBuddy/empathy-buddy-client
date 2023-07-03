@@ -36,7 +36,6 @@ function EditRequest(){
         e.preventDefault();
         
         const requestBody = {feeling, date, phone, language}
-
         axios
           .put(`${API_URL}/api/requests/${requestId}`, requestBody)
           .then((response) => {
@@ -56,6 +55,7 @@ function EditRequest(){
     }
 
     return(
+        
         <div>
             <h2>Edit the Request</h2>
 
