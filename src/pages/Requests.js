@@ -25,11 +25,10 @@ function Requests(){
 
     return(
         <div>
-            
-
-
-            <h1>Requests List:</h1>
             <AddRequest refreshRequests = {getAllRequests}/>
+            <hr></hr>
+
+            <h1>Pending requests:</h1>
             <hr></hr>
             {requestsList.map((request)=>{
                 // console.log(request);
