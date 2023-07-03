@@ -1,6 +1,8 @@
 import axios from "axios"
 import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { AuthContext } from "../context/auth.context";
+
 
 const API_URL = "http://localhost:5005";
 
@@ -12,7 +14,7 @@ function LogIn(){
 
     const navigate = useNavigate();
 
-    // const { storeToken, authenticateUser } = useContext(AuthContext);
+    const { storeToken, authenticateUser } = useContext(AuthContext);
 
     const handleEmail = (e) => {setEmail(e.target.value)}
     const handlePassword = (e) => {setPassword(e.target.value)}
@@ -26,8 +28,8 @@ function LogIn(){
           .then((response) => {
             console.log("JWT token", response.data.authToken);
     
-            // storeToken(response.data.authToken);
-            // authenticateUser();
+            storeToken(response.data.authToken);
+            authenticateUser();
             navigate("/");
           })
           .catch((error) => {
