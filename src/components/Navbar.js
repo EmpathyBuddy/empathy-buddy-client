@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { NAvLink, NavLink } from "react-router-dom";
 import { AuthContext } from "../context/auth.context";
 
 function Navbar() {
@@ -8,22 +8,16 @@ function Navbar() {
 
   return (
     <nav>
-      <Link to="/">
-        <button>Home</button>
-      </Link>
+ 
 
-      <Link to="/requests">
-        <button>Empathy requests</button>
-      </Link>
-      <Link to="/guidelines">
-        <button>Guidelines</button>
-      </Link>
-      <Link to="/feelings-card">
-        <button>Feelings and needs card</button>
-      </Link>
-      <Link to="/posts">
-        <button>Posts</button>
-      </Link>
+ 
+
+
+ <NavLink to="/">Home</NavLink>
+ <NavLink to="/requests">Empathy requests</NavLink>
+ <NavLink to="/guidelines">Guidelines</NavLink>
+ <NavLink to="/feelings-card">Feelings and Needs</NavLink>
+ <NavLink to="/posts">Posts</NavLink>
 
       {/* LOGIN PART */}
       {isLoggedIn && (
@@ -34,8 +28,8 @@ function Navbar() {
       )}
       {!isLoggedIn && (
         <>
-          <Link to="/signup"> <button>Sign Up</button> </Link>
-          <Link to="/login"> <button>Login</button> </Link>
+          <NavLink to="/signup"> Sign Up </NavLink>
+          <NavLink to="/login">Login </NavLink>
         </>
       )}
       
