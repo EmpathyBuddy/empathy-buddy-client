@@ -9,10 +9,6 @@ function Navbar() {
   return (
     <nav>
  
-
- 
-
-
  <NavLink to="/">Home</NavLink>
  <NavLink to="/requests">Empathy requests</NavLink>
  <NavLink to="/guidelines">Guidelines</NavLink>
