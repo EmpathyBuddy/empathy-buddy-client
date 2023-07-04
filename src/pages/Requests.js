@@ -42,8 +42,7 @@ function Requests() {
                     <div key={request._id}>
                         <h3>{request.feeling}</h3> <br />
                         <p>{request.date}</p> <br />
-                        {/* <p>{request.phone}</p>
-                        <p>{request.language}</p> */}
+                        {/* We could try use .toLocaleString() for a better visual date */}
                         <Link to={`/requests/${request._id}`}>
                             <button>Details</button>
                         </Link>
