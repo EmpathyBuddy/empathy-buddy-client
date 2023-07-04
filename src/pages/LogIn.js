@@ -24,7 +24,7 @@ function LogIn(){
         const requestBody = { email, password };
     
         axios
-          .post(`${API_URL}/auth/login`, requestBody)
+          .post(`${process.env.REACT_APP_API_URL}/auth/login`, requestBody)
           .then((response) => {
             console.log("JWT token", response.data.authToken);
     

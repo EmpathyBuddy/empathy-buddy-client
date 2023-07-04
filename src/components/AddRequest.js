@@ -20,7 +20,7 @@ function AddRequest(props) {
     const storedToken = localStorage.getItem('authToken')
 
       axios
-        .post(`${API_URL}/api/requests`, requestBody, {headers: {Authorization: `Bearer ${storedToken}`}})
+        .post(`${process.env.REACT_APP_API_URL}/api/requests`, requestBody, {headers: {Authorization: `Bearer ${storedToken}`}})
 
         .then((response) => {
           // Reset the state

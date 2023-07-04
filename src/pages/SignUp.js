@@ -28,7 +28,7 @@ const handleSignUpSubmit = (e)=> {
     // If the request resolves with an error, set the error message in the state
     
     axios
-    .post(`${API_URL}/auth/signup`, requestBody)
+    .post(`${process.env.REACT_APP_API_URL}/auth/signup`, requestBody)
     .then((response)=>{
         navigate('/login');
     })

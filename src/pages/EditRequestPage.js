@@ -18,7 +18,7 @@ function EditRequest(){
     //Get the data from the api
     const getRequest = () => {
         axios
-        .get(`${API_URL}/api/requests/${requestId}`)
+        .get(`${process.env.REACT_APP_API_URL}/api/requests/${requestId}`)
         .then((response)=> {
         //   console.log(response);
             const oneRequest = response.data;
@@ -39,7 +39,7 @@ function EditRequest(){
         
         const requestBody = {feeling, date, phone, language}
         axios
-          .put(`${API_URL}/api/requests/${requestId}`, requestBody, {headers: {Authorization: `Bearer ${storedToken}`}})
+          .put(`${process.env.REACT_APP_API_URL}/api/requests/${requestId}`, requestBody, {headers: {Authorization: `Bearer ${storedToken}`}})
           .then((response) => {
             navigate(`/requests/${requestId}`)
           })
@@ -49,7 +49,7 @@ function EditRequest(){
     // Delete Request
     const deleteRequest = () => {
         axios
-          .delete(`${API_URL}/api/requests/${requestId}`, {headers: {Authorization: `Bearer ${storedToken}`}})
+          .delete(`${process.env.REACT_APP_API_URL}/api/requests/${requestId}`, {headers: {Authorization: `Bearer ${storedToken}`}})
           .then(()=>{
             navigate('/requests');
           })

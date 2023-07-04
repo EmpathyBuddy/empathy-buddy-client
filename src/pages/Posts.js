@@ -9,7 +9,7 @@ function Posts(){
 
     const getAllPosts = () => {
         axios
-          .get(`${API_URL}/api/posts`)
+          .get(`${process.env.REACT_APP_API_URL}/api/posts`)
           .then((response)=>{
             // console.log(response.data);
             return setPostsList(response.data)

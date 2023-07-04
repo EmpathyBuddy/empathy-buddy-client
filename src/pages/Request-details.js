@@ -16,7 +16,7 @@ function RequestDetails() {
   const getRequest = () => {
     axios
       .get(
-        `${API_URL}/api/requests/${requestId}`
+        `${process.env.REACT_APP_API_URL}/api/requests/${requestId}`
         // { headers: { Authorization: `Bearer ${storedToken}` } }
       )
 
