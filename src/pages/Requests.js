@@ -12,7 +12,7 @@ function Requests() {
 
     const getAllRequests = () => {
         axios
-            .get(`${process.env.REACT_APP_API_URL}/api/requests`)
+            .get(`${process.env.REACT_APP_API_URL}/api/requests`,{headers:{"content-type":"application/json"}})
             .then((response) => {
                 // console.log(response);
                 return setRequestsList(response.data)
