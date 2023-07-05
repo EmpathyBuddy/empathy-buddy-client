@@ -10,6 +10,7 @@ import FeelingsCard from './pages/Feelings-card';
 import Posts from './pages/Posts';
 import RequestDetails from './pages/Request-details';
 import EditRequest from './pages/EditRequestPage';
+import PostDetails from './pages/PostDetails';
 import LogIn from './pages/LogIn';
 import SignUp from './pages/SignUp';
 
@@ -28,7 +29,9 @@ function App() {
         <Route path='/posts' element={<Posts/>}/>
         <Route path='/requests/:requestId' element={<RequestDetails/>}/> 
         <Route path='/requests/edit/:requestId' element={<EditRequest />}/>
-        
+        <Route path='/posts/:postId' element={<PostDetails/>}/> 
+
+
         <Route path="/signup" element={ <SignUp /> }/>
         <Route path="/login" element={ <LogIn /> }/>
  
