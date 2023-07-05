@@ -1,5 +1,7 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
+import '@picocss/pico'
+
 import { Routes, Route } from "react-router-dom";
 
 import Navbar from './components/Navbar';
