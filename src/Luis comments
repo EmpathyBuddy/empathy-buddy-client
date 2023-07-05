@@ -1,0 +1,35 @@
+
+
+[ ] Create environment variable to store api url
+    in .env --> REACT_APP_API_URL = http:// 5005
+
+    in netlify --> REACT_APP_API_URL = adaptable
+
+
+[ ] (in client) change all http requests to use that environment variable
+    -- hint: search "axios"
+    -- all requests now need to go to {process.env.REACT_APP_API_URL}
+
+[ ] restart React app + test in localhost
+
+[  ] push + wait for deploy (5min) + test on production
+
+
+__________
+
+
+[ ] git push both back / front 
+[ ] test on production (all things that work in localhost should work in prod)
+[ ] make a list of next steps
+    - functionality MVP
+      -- Request --> CRUD
+      -- Post --> CR
+    - css/ui for  MVP
+
+
+Options:
+- plain css <
+- bootstrap css
+- component library
+
+
