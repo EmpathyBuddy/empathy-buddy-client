@@ -35,26 +35,26 @@ function Posts(){
             
                 <AddPost refreshPosts={getAllPosts} />
             
+           
 
-            <hr />
-            <h3>Posts:</h3>
-            <hr></hr>
+            <h2>Posts</h2>
+            
 
             {/* <div class="row row-example"> */}
-            <div className="grid">
+            <div className="grid" class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
         
 
             {postsList.map((post) => {
                 console.log(post);
                 return(
 
-                    <div key={post._id} className="post card">
+                    <div key={post._id} className="post card" >
                         {/* class="col-sm-12 col-md-6 col-lg-6 col-xl-6" */}
-<div class="col-example">
-                        <h3>{post.title}</h3>
+                        <div class="col-example">
+                        <h4>{post.title}</h4>
                         {/* <p>{post.description}</p> */}
                         <Link to={`/posts/${post._id}`}>
-              <button> Post Details</button>
+              <button>Read Post</button>
             </Link>
                     </div>
                     </div>

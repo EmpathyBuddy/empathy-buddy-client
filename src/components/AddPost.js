@@ -30,21 +30,21 @@ function AddPost (props) {
             <h3>Add a post</h3>
             <form onSubmit={handleSubmit}>
 
-            <label>Title:</label>
+            <label>Title</label>
           <textarea
             type="text"
             name="title"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
           />
-          <label>Your Post:</label>
+          <label>Your Post</label>
           <textarea
             type="text"
             name="description"
             value={description}
             onChange={(e) => setDescription(e.target.value)}
           />
-          <button type="submit">Publish your post</button>
+          <button type="submit">Publish</button>
             </form>
 
         </div>
