@@ -39,10 +39,15 @@ function Posts(){
             <hr />
             <h3>Posts:</h3>
             <hr></hr>
+
+            <div class="row row-example">
+
             {postsList.map((post) => {
                 console.log(post);
                 return(
-                    <div key={post._id}>
+
+                    <div key={post._id} class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+<div class="col-example">
                         <h3>{post.title}</h3>
                         {/* <p>{post.description}</p> */}
                         <Link to={`/posts/${post._id}`}>
@@ -50,9 +55,13 @@ function Posts(){
             </Link>
                         <hr></hr>
                     </div>
+                    </div>
                 )
             })}
+            </div>
         </div>
+
+      
     )
 }
 export default Posts;
