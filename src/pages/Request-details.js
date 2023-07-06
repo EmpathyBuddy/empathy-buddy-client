@@ -44,18 +44,15 @@ function RequestDetails() {
       <p>We can call on this number {request.phone}</p>
       <p>I speak {request.language}</p>
 
-
-
-      <Link to="/requests">
-        <button>Back to Requests</button>
-      </Link>
-
       {user && user._id === request.owner &&
         <Link to={`/requests/edit/${requestId}`}>
           <button>Edit Request</button>
         </Link>
       }
-
+      
+      <Link to="/requests">
+        <button>Back to Requests</button>
+      </Link>
 
     </div>
   )

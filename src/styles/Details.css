@@ -1,6 +1,15 @@
 .RequestDetails{
     background-color: #89375F;
     padding: 4%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+}
 
+.RequestDetails button {
+    background-color: darkslategray;
+}
 
+.RequestDetails h3, p {
+    color: aliceblue;
 }
