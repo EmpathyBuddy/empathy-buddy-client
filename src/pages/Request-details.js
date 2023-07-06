@@ -5,7 +5,7 @@ import { useState, useEffect, useContext } from "react";
 import { AuthContext } from "../context/auth.context";
 
 
-const API_URL = "http://localhost:5005";        // <== ADD
+const API_URL = "http://localhost:5005";
 
 
 function RequestDetails() {
@@ -37,6 +37,8 @@ function RequestDetails() {
 
 
   return (
+    <div className='detailContainer'>
+
     <div className="RequestDetails card" >
 
       <h3>{request.feeling}</h3>
@@ -49,11 +51,12 @@ function RequestDetails() {
           <button>Edit Request</button>
         </Link>
       }
-      
+
       <Link to="/requests">
         <button>Back to Requests</button>
       </Link>
 
+    </div>
     </div>
   )
 }

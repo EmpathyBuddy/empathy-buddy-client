@@ -57,8 +57,9 @@ function EditRequest(){
     }
 
     return(
-        
-        <div>
+        <div className="formContainer">
+
+        <div className="Login article">
             <h2>Edit the Request</h2>
 
             <form onSubmit={handleFormSubmit}>
@@ -95,12 +96,14 @@ function EditRequest(){
                     onChange={(e)=>setLanguage(e.target.value)}/>
                 <br></br>
                 
-                <button type="submit">
-                    Update Request
-                </button>
-                <br></br>
+                <div className="">
+                    <button type="submit">
+                        Update Request
+                    </button>
+                    <button onClick={deleteRequest}>Delete Request</button>
+                </div>
             </form>
-            <button onClick={deleteRequest}>Delete Request</button>
+        </div>
         </div>
     )
 }

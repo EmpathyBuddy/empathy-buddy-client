@@ -39,6 +39,8 @@ function LogIn(){
     }
 
     return(
+      <div className="formContainer">
+
         <div className="Login card">
         <h1>Login</h1>
   
@@ -60,6 +62,7 @@ function LogIn(){
   
         <p>Don't have an account yet?</p>
         <Link to={"/signup"}> Sign Up</Link>
+      </div>
       </div>
     )
 }

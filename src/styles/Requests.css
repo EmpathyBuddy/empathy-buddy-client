@@ -4,24 +4,42 @@
     padding: 2%;
 }
 .Requests button {
-    background-color: #00796b;
+    background-color: #CE5959;
+    max-width: 40%;
+}
+.Requests h1{
+    text-align: center;
 }
 /*  */
 
 /* ADDREQUEST */
 .AddRequest {
-    background-color: #fff2cd;
+    background-color: #89375F;
     padding: 4%;
+    margin: 15%;
+    margin-bottom: 5%;
+    /* color: white; */
+}
+.AddRequest h3, label {
+    color: white;
 }
 .AddRequest textarea, input{
     background-color: #fffaf2;
+}
+.AddRequest button{
+    background-color: #BACDDB;
+    color: black;
+    max-width: 40%;
 }
 /*  */
 
 /* REQUEST */
 .request {
-    background-color: #fcd5aa;
+    background-color: #BACDDB;
     padding: 3%;
-    margin-bottom: 3%;
+    margin-bottom: 10%;
+}
+.requestList{
+    margin: 4%;
 }
 /*  */

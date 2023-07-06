@@ -34,11 +34,10 @@ function Requests() {
             {user &&
                 <AddRequest refreshRequests={getAllRequests} />
             }
-            <hr></hr>
 
             <h1>Pending requests:</h1>
-            <hr></hr>
-            <div className='grid'>
+            <div className='requestList grid'>
+
                 {requestsList.map((request) => {
                     // console.log(request);
                     return (

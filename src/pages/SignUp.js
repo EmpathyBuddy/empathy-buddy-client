@@ -44,6 +44,8 @@ function SignUp(props) {
 
 
   return (
+    <div className="formContainer">
+
     <div className="SignUp card">
       <h1> Sign Up to find empathy!</h1>
 
@@ -58,7 +60,7 @@ function SignUp(props) {
             name="email"
             value={email}
             onChange={handleEmail}
-          />
+            />
           <br />
           <label>Password:</label>
           <input
@@ -66,7 +68,7 @@ function SignUp(props) {
             name="password"
             value={password}
             onChange={handlePassword}
-          />
+            />
           <br />
           <label>Name:</label>
           <input
@@ -74,7 +76,7 @@ function SignUp(props) {
             name="name"
             value={name}
             onChange={handleName}
-          />
+            />
           <br />
           <button type="submit">Sign Up</button>
         </form>
@@ -85,6 +87,7 @@ function SignUp(props) {
         <Link to={"/login"}> Login</Link>
       </div>
 
+      </div>
     </div>
   )
 

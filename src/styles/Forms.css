@@ -1,6 +1,6 @@
 
 .SignUp {
-    background-color: #ff8181d2;
+    background-color: #89375F;
     padding: 4%;
     max-width: 700px;
     align-items: center;
@@ -8,6 +8,8 @@
     margin-left: 20%;
     margin-right: 20%;
     margin-top: 10%;
+    margin-bottom: 20vh;
+    text-align: center;
 
 }
 
@@ -18,11 +20,33 @@
 } */
 
 .Login {
-    background-color: #ff8181d2;
+    background-color: #89375F;
     padding: 4%;
     max-width: 700px;
     align-items: center;
     margin-left: 20%;
     margin-right: 20%;
     margin-top: 10%;
+    margin-bottom: 30vh;
+    /* display: table-cell; */
+    text-align: center;
+}
+.formContainer{
+    display: table;
+    width: 100%;
+}
+.formContainer button {
+    background-color: #BACDDB;
+    color: black;
+    max-width: 40%;
+}
+.formContainer h1{
+    color: white;
+}
+
+.buttonContainer{
+    display: row;
+}
+.buttonContainer button{
+    display: flex;
 }

@@ -35,7 +35,8 @@ function PostDetails() {
     
     console.log(user)
       return (
-        <div className="PostDetails" >
+          <div className="detailContainer">
+        <div className="PostDetails card" >
             
           <h3>{post.title}</h3>
           <p>{post.description}</p>
@@ -54,7 +55,7 @@ function PostDetails() {
             </Link> */}
           
     
-    
+          </div>
         </div>
       )
     }
