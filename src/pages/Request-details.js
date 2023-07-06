@@ -1,3 +1,4 @@
+import '../styles/Details.css'
 import axios from "axios"
 import { Link, useParams } from "react-router-dom";
 import { useState, useEffect, useContext } from "react";
@@ -36,7 +37,7 @@ function RequestDetails() {
 
 
   return (
-    <div className="RequestDetails" >
+    <div className="RequestDetails card" >
 
       <h3>{request.feeling}</h3>
       <p>Would love to talk on :{request.date}</p>

@@ -39,7 +39,7 @@ function LogIn(){
     }
 
     return(
-        <div className="LoginPage">
+        <div className="Login card">
         <h1>Login</h1>
   
         <form onSubmit={handleLoginSubmit}>
