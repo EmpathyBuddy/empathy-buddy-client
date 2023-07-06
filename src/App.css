@@ -1,4 +1,40 @@
+/* Teal Light scheme (Default) */
+/* Can be forced with data-theme="light" */
+[data-theme="light"],
+:root:not([data-theme="dark"]) {
+  --primary: #00897b;
+  --primary-hover: #00796b;
+  --primary-focus: rgba(0, 137, 123, 0.125);
+  --primary-inverse: #FFF;
+}
+
 .App {
   text-align: left;
+  padding: 3%
 }
+nav {
+  padding: 2%;
+}
+
+/* //////////////HOME PAGE////////////////// */
+
+/* //////////////SIGN UP////////////////// */
+
+/* //////////////LOG IN////////////////// */
+
+/* //////////////LIST OF REQUESTS////////////////// */
+
+/* //////////////REQUEST DETAILS////////////////// */
+
+/* //////////////EDIT REQUESTS////////////////// */
+
+/* //////////////POSTS////////////////// */
+
+/* //////////////POST DETAILS////////////////// */
+
+/* //////////////GUIDELINES////////////////// */
+
+/* //////////////FEELINGS AND NEEDS////////////////// */
+
+
 

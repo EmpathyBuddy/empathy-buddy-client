@@ -9,7 +9,6 @@ function HomePage() {
   return (
     <div>
       <h1>Home Page</h1>
-      <button type="button" className="btn btn-secondary">Probando</button>
       {user ?
         <Link to="/requests">
           <button >Create an Empathy Request</button>
