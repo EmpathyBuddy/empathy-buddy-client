@@ -31,7 +31,7 @@ function Posts(){
     // console.log(postsList);
 
     return(
-        <div>
+        <div className="Posts">
             
                 <AddPost refreshPosts={getAllPosts} />
             
@@ -40,20 +40,22 @@ function Posts(){
             <h3>Posts:</h3>
             <hr></hr>
 
-            <div class="row row-example">
+            {/* <div class="row row-example"> */}
+            <div className="grid">
+        
 
             {postsList.map((post) => {
                 console.log(post);
                 return(
 
-                    <div key={post._id} class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <div key={post._id} className="post card">
+                        {/* class="col-sm-12 col-md-6 col-lg-6 col-xl-6" */}
 <div class="col-example">
                         <h3>{post.title}</h3>
                         {/* <p>{post.description}</p> */}
                         <Link to={`/posts/${post._id}`}>
               <button> Post Details</button>
             </Link>
-                        <hr></hr>
                     </div>
                     </div>
                 )

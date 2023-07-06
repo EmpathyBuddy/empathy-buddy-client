@@ -26,7 +26,7 @@ function AddPost (props) {
     }
 
     return(
-        <div className="AddPost">
+        <div className="AddPost card">
             <h3>Add a post</h3>
             <form onSubmit={handleSubmit}>
 

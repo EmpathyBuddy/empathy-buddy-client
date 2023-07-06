@@ -16,13 +16,11 @@ nav {
   padding: 2%;
 }
 
+
 /* //////////////HOME PAGE////////////////// */
 
 /* //////////////SIGN UP////////////////// */
 
-.grid{
-  
-}
 
 /* //////////////LOG IN////////////////// */
 
@@ -33,6 +31,33 @@ nav {
 /* //////////////EDIT REQUESTS////////////////// */
 
 /* //////////////POSTS////////////////// */
+/* .row-example {
+  margin-top: calc(var(--typography-spacing-vertical) * 2);
+  margin-bottom: calc(var(--typography-spacing-vertical) * 2);
+}
+.col-example {
+  margin-bottom: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left:15px ;
+  padding-right:15px ;
+  background:   #00897b2c;
+  color: rgb(116, 116, 112);
+  text-align: left;
+} */
+
+.AddPost{
+  background-color: #73d1c86c;
+  padding: 4%;
+}
+.AddPost textarea {
+  background-color: #fff;
+}
+.post {
+  padding: 3%;
+  margin-bottom: 3%;
+  background-color: #00897b59;
+}
 
 /* //////////////POST DETAILS////////////////// */
 
