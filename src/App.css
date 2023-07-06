@@ -51,6 +51,10 @@ nav {
 .AddPost{
   background-color: #73d1c86c;
   padding: 4%;
+  margin-left: 20%;
+  margin-right: 20%;
+  /* max-width: 60%;
+  align-content: center; */
 }
 .AddPost textarea {
   background-color: #fff;
