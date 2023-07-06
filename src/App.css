@@ -135,6 +135,43 @@ background-color: #BACDDB;
 
 /* //////////////GUIDELINES////////////////// */
 
+.guidelines {
+  padding-top: 7%;
+  padding-bottom: 15%;
+}
+.support{
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  background-color: #BACDDB;
+}
+.guidelines h1{
+  color: #89375F;
+  margin-left: 5%;
+  margin-bottom: 1%;
+}
+.guidelines h3{
+  color: #89375F;
+  margin-left: 5%;
+  margin-bottom: 2%;
+}
+.guidelines h4{
+  color: #89375F;
+  margin-top: 5%;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-bottom: 3%;
+}
+
+
+.blockers{
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 1%;
+  background-color: #BACDDB;
+
+}
+
 /* //////////////FEELINGS AND NEEDS////////////////// */
 
 
