@@ -365,15 +365,14 @@ function FeelingsCard() {
        
      
       {/* ///////////     NEEEEEEEDS     ///////////////////*/}
-      <h2>NEEDS</h2>
+      <h2 className="pt-5">NEEDS</h2>
       <p>
         This list can help you identify what is really present inside you at the
         moment
       </p>
 
-      <div className="row" >
-        <div className="col">
-        <div>
+      <div className="row justify-content-center" >
+        <div className="positivefeelings card col-sm-6 col-md-6 col-lg-4 col-xl-2 m-4 p-2">
           <h4>CONNECTION</h4>
           <p>acceptance</p>
           <p>affection</p>
@@ -403,8 +402,7 @@ function FeelingsCard() {
           <p>trust</p>
           <p>warmth</p>
         </div>
-
-        <div>
+        <div className="positivefeelings card col-sm-6 col-md-6 col-lg-4 col-xl-2 m-4 p-2">
           <h4>PHYSICAL WELL BEING</h4>
           <p>air</p>
           <p>food</p>
@@ -416,21 +414,22 @@ function FeelingsCard() {
           <p>touch</p>
           <p>water</p>
         </div>
-
-        <div>
+        <div className="positivefeelings card col-sm-6 col-md-6 col-lg-4 col-xl-2 m-4 p-2">
           <h4>HONESTY</h4>
           <p>authenticity</p>
           <p>integrity</p>
           <p>presence</p>
         </div>
-
-        <div>
+        <div className="positivefeelings card col-sm-6 col-md-6 col-lg-4 col-xl-2 m-4 p-2">
           <h4>PLAY</h4>
           <p>joy</p>
           <p>humor</p>
         </div>
+        </div>
 
-        <div>
+        <div className="row justify-content-center" >
+
+        <div className="positivefeelings card col-sm-6 col-md-6 col-lg-4 col-xl-2 m-4 p-2">
           <h4>PEACE</h4>
           <p>beauty</p>
           <p>communion</p>
@@ -440,8 +439,7 @@ function FeelingsCard() {
           <p>inspiration</p>
           <p>order</p>
         </div>
-
-        <div>
+        <div className="positivefeelings card col-sm-6 col-md-6 col-lg-4 col-xl-2 m-4 p-2">
           <h4>AUTONOMY</h4>
           <p>choice</p>
           <p>freedom</p>
@@ -449,8 +447,7 @@ function FeelingsCard() {
           <p>space</p>
           <p>spontaneity</p>
         </div>
-
-        <div>
+        <div className="positivefeelings card col-sm-6 col-md-6 col-lg-4 col-xl-2 m-4 p-2">
           <h4>MEANING</h4>
           <p>awareness</p>
           <p>celebration of life</p>
@@ -474,10 +471,11 @@ function FeelingsCard() {
           <p>to matter</p>
           <p>understanding</p>
         </div>
+        </div>
+        </div>
 
-      </div>
-      </div>
-    </div>
+      
+    
   );
 }
 export default FeelingsCard;

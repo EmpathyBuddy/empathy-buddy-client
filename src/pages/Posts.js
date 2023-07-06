@@ -54,7 +54,7 @@ function Posts(){
                         <h4>{post.title}</h4>
                         {/* <p>{post.description}</p> */}
                         <Link to={`/posts/${post._id}`}>
-              <button>Read Post</button>
+              <button type="button" className="btn btn-secondary">Read Post</button>
             </Link>
                     </div>
                     </div>
