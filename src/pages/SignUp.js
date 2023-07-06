@@ -42,9 +42,12 @@ const handleSignUpSubmit = (e)=> {
 
 
     return (
-        <div className="SignUp">
+        <div class="grid" className="SignUp">
             <h1> Sign Up to find empathy!</h1>
 
+            <div>1</div>
+            <div>
+            
             
       <form onSubmit={handleSignUpSubmit}>
         <label>Email:</label>
@@ -78,6 +81,9 @@ const handleSignUpSubmit = (e)=> {
 
       <p>Already have account?</p>
       <Link to={"/login"}> Login</Link>
+      </div>
+
+      <div>3</div>
         </div>
     )
     
