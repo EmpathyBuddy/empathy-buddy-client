@@ -37,7 +37,7 @@ function AddRequest(props) {
 
 
     return (
-      <div className="AddRequest">
+      <div className="AddRequest card">
         <h3>Add Request</h3>
 
         <form onSubmit= {handleSubmit}>

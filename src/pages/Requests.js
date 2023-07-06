@@ -1,3 +1,5 @@
+import '../styles/Requests.css'
+
 import axios from "axios";
 import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
@@ -28,7 +30,7 @@ function Requests() {
 
 
     return (
-        <div>
+        <div className="Requests">
             {user &&
                 <AddRequest refreshRequests={getAllRequests} />
             }
@@ -36,21 +38,22 @@ function Requests() {
 
             <h1>Pending requests:</h1>
             <hr></hr>
-            {requestsList.map((request) => {
-                // console.log(request);
-                return (
-                    <div key={request._id}>
-                        <h3>{request.feeling}</h3> <br />
-                        <p>{request.date}</p> <br />
-                        {/* We could try use .toLocaleString() for a better visual date */}
-                        <Link to={`/requests/${request._id}`}>
-                            <button>Details</button>
-                        </Link>
+            <div className='grid'>
+                {requestsList.map((request) => {
+                    // console.log(request);
+                    return (
+                        <div key={request._id} className='request card'>
+                            <h3>{request.feeling}</h3> <br />
+                            <p>{request.date.toLocaleString()}</p> <br />
+                            {/* We could try use .toLocaleString() for a better visual date */}
+                            <Link to={`/requests/${request._id}`}>
+                                <button>Details</button>
+                            </Link>
+                        </div>
+                    )
+                })}
 
-                        <hr></hr>
-                    </div>
-                )
-            })}
+            </div>
         </div>
     )
 }
