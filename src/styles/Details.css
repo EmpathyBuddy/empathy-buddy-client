@@ -3,6 +3,7 @@
     padding: 4%;
     margin: 10%;
     margin-bottom: 35vh;
+    
 }
 
 .RequestDetails button {
@@ -15,8 +16,12 @@
 
 .detailContainer{
     display: table;
-    width: 100%;
+    width: 100%;    
 }
+.detailContainer p{
+    color: darkslategray;   
+}
+
 
 .PostDetails{
     background-color: #CE5959;
