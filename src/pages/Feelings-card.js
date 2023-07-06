@@ -7,9 +7,8 @@ function FeelingsCard() {
         the moment
       </p>
       <h3>Positive</h3>
+      
       <div className="row justify-content-center" >
-
-
         <div className="positivefeelings card col-sm-6 col-md-6 col-lg-4 col-xl-2 m-4 p-2">
           <h4>AFFECTIONATE</h4>
           <p>compassionate</p>
@@ -50,9 +49,10 @@ function FeelingsCard() {
           <p>secure</p>
         </div>
         </div>
-        <div className="col">
         
-        <div className="positivefeelings">
+        <div className="col">
+        <div className="row justify-content-center" > 
+        <div className="positivefeelings card col-sm-6 col-md-6 col-lg-4 col-xl-2 m-4 p-2">
           <h4>EXCITED</h4>
           <p>amazed</p>
           <p>animated</p>
@@ -70,21 +70,20 @@ function FeelingsCard() {
           <p>surprised</p>
           <p>vibrant</p>
         </div>
-        <div className="positivefeelings">
+        <div className="positivefeelings card col-sm-6 col-md-6 col-lg-4 col-xl-2 m-4 p-2">
           <h4>GRATEFUL</h4>
           <p>appreciative</p>
           <p>moved</p>
           <p>thankful</p>
           <p>touched</p>
         </div>
-        
-        <div className="positivefeelings">
+        <div className="positivefeelings card col-sm-6 col-md-6 col-lg-4 col-xl-2 m-4 p-2">
           <h4>INSPIRED</h4>
           <p>amazed</p>
           <p>awed</p>
           <p>wonder</p>
         </div>
-        <div className="positivefeelings">
+        <div className="positivefeelings card col-sm-6 col-md-6 col-lg-4 col-xl-2 m-4 p-2">
           <h4>JOYFUL</h4>
           <p>amused</p>
           <p>delighted</p>
@@ -94,8 +93,12 @@ function FeelingsCard() {
           <p>pleased</p>
           <p>tickled</p>
         </div>
+        </div>
+      
 
-        <div className="positivefeelings">
+        <div className="row justify-content-center" > 
+
+        <div className="positivefeelings card col-sm-6 col-md-6 col-lg-4 col-xl-2 m-4 p-2">
           <h4>EXHILARATED</h4>
           <p>blissful</p>
           <p>ecstatic</p>
@@ -106,7 +109,7 @@ function FeelingsCard() {
           <p>rapturous</p>
           <p>thrilled</p>
         </div>
-        <div className="positivefeelings">
+        <div className="positivefeelings card col-sm-6 col-md-6 col-lg-4 col-xl-2 m-4 p-2">
           <h4>PEACEFUL</h4>
           <p>calm</p>
           <p>clear headed</p>
@@ -125,7 +128,7 @@ function FeelingsCard() {
           <p>tranquil</p>
           <p>trusting</p>
         </div>
-        <div className="positivefeelings">
+        <div className="positivefeelings card col-sm-6 col-md-6 col-lg-4 col-xl-2 m-4 p-2">
           <h4>REFRESHED</h4>
           <p>enlivened</p>
           <p>rejuvenated</p>
@@ -134,14 +137,14 @@ function FeelingsCard() {
           <p>restored</p>
           <p>revived</p>
         </div>
+        </div>
         
       </div>
-
       <div>
         <h3>Negative feelings</h3>
-        <div className="row" >
-        <div className="col">
-          <div className="negativefeelings">
+
+        <div className="row justify-content-center" >
+        <div className="negativefeelings card col-sm-6 col-md-6 col-lg-4 col-xl-2 m-4 p-2">
             <h4>AFRAID</h4>
             <p>apprehensive</p>
             <p>dread</p>
@@ -156,8 +159,7 @@ function FeelingsCard() {
             <p>wary</p>
             <p>worried</p>
           </div>
-
-          <div className="negativefeelings">
+        <div className="negativefeelings card col-sm-6 col-md-6 col-lg-4 col-xl-2 m-4 p-2">
             <h4>ANNOYED</h4>
             <p>aggravated</p>
             <p>dismayed</p>
@@ -169,8 +171,7 @@ function FeelingsCard() {
             <p>irritated</p>
             <p>irked</p>
           </div>
-
-          <div className="negativefeelings">
+        <div className="negativefeelings card col-sm-6 col-md-6 col-lg-4 col-xl-2 m-4 p-2">
             <h4>ANGRY</h4>
             <p>enraged</p>
             <p>furious</p>
@@ -181,8 +182,7 @@ function FeelingsCard() {
             <p>outraged</p>
             <p>resentful</p>
           </div>
-
-          <div className="negativefeelings">
+        <div className="negativefeelings card col-sm-6 col-md-6 col-lg-4 col-xl-2 m-4 p-2">
             <h4>AVERSION</h4>
             <p>animosity</p>
             <p>appalled</p>
@@ -194,8 +194,11 @@ function FeelingsCard() {
             <p>hostile</p>
             <p>repulsed</p>
           </div>
+          </div>
 
-          <div className="negativefeelings">
+          <div className="row justify-content-center" >
+        <div className="negativefeelings card col-sm-6 col-md-6 col-lg-4 col-xl-2 m-4 p-2">
+
             <h4>CONFUSED</h4>
             <p>ambivalent</p>
             <p>baffled</p>
@@ -209,8 +212,8 @@ function FeelingsCard() {
             <p>puzzled</p>
             <p>torn</p>
           </div>
+        <div className="negativefeelings card col-sm-6 col-md-6 col-lg-4 col-xl-2 m-4 p-2">
 
-          <div className="negativefeelings">
             <h4>DISCONNECTED</h4>
             <p>alienated</p>
             <p>aloof</p>
@@ -226,8 +229,8 @@ function FeelingsCard() {
             <p>uninterested</p>
             <p>withdrawn</p>
           </div>
+        <div className="negativefeelings card col-sm-6 col-md-6 col-lg-4 col-xl-2 m-4 p-2">
 
-          <div className="negativefeelings">
             <h4>DISQUIET</h4>
             <p>agitated</p>
             <p>alarmed</p>
@@ -249,8 +252,8 @@ function FeelingsCard() {
             <p>unsettled</p>
             <p>unsettled</p>
           </div>
+        <div className="negativefeelings card col-sm-6 col-md-6 col-lg-4 col-xl-2 m-4 p-2">
 
-          <div className="negativefeelings">
             <h4>EMBARRASSED</h4>
             <p>ashamed</p>
             <p>chagrined</p>
@@ -259,8 +262,14 @@ function FeelingsCard() {
             <p>mortified</p>
             <p>self‐conscious</p>
           </div>
+          </div>
 
-          <div className="negativefeelings">
+
+
+          <div className="row justify-content-center" >
+
+        <div className="negativefeelings card col-sm-6 col-md-6 col-lg-4 col-xl-2 m-4 p-2">
+
             <h4>FATIGUE</h4>
             <p>beat</p>
             <p>burnt out</p>
@@ -273,8 +282,8 @@ function FeelingsCard() {
             <p>weary</p>
             <p>worn out</p>
           </div>
+        <div className="negativefeelings card col-sm-6 col-md-6 col-lg-4 col-xl-2 m-4 p-2">
 
-          <div className="negativefeelings">
             <h4>PAIN</h4>
             <p>agony</p>
             <p>anguished</p>
@@ -288,8 +297,8 @@ function FeelingsCard() {
             <p>regretful</p>
             <p>remorseful</p>
           </div>
+        <div className="negativefeelings card col-sm-6 col-md-6 col-lg-4 col-xl-2 m-4 p-2">
 
-          <div className="negativefeelings">
             <h4>SAD</h4>
             <p>depressed</p>
             <p>dejected</p>
@@ -306,8 +315,8 @@ function FeelingsCard() {
             <p>unhappy</p>
             <p>wretched</p>
           </div>
+        <div className="negativefeelings card col-sm-6 col-md-6 col-lg-4 col-xl-2 m-4 p-2">
 
-          <div className="negativefeelings">
             <h4>TENSE</h4>
             <p>anxious</p>
             <p>cranky</p>
@@ -323,8 +332,12 @@ function FeelingsCard() {
             <p>restless</p>
             <p>stressed out</p>
           </div>
+          </div>
 
-          <div className="negativefeelings">
+
+        <div className="row justify-content-center" >
+        <div className="negativefeelings card col-sm-6 col-md-6 col-lg-4 col-xl-2 m-4 p-2">
+
             <h4>VULNERABLE</h4>
             <p>fragile</p>
             <p>guarded</p>
@@ -335,8 +348,8 @@ function FeelingsCard() {
             <p>sensitive</p>
             <p>shaky</p>
           </div>
+        <div className="negativefeelings card col-sm-6 col-md-6 col-lg-4 col-xl-2 m-4 p-2">
 
-          <div className="negativefeelings">
             <h4>YEARNING</h4>
             <p>envious</p>
             <p>jealous</p>
@@ -346,18 +359,20 @@ function FeelingsCard() {
             <p>wistful</p>
           </div>
           </div>
-        </div>
-      </div>
+
+
+          </div>
+       
+     
       {/* ///////////     NEEEEEEEDS     ///////////////////*/}
-      <h2>NEEDS</h2>
+      <h2 className="pt-5">NEEDS</h2>
       <p>
         This list can help you identify what is really present inside you at the
         moment
       </p>
 
-      <div className="row" >
-        <div className="col">
-        <div>
+      <div className="row justify-content-center" >
+        <div className="positivefeelings card col-sm-6 col-md-6 col-lg-4 col-xl-2 m-4 p-2">
           <h4>CONNECTION</h4>
           <p>acceptance</p>
           <p>affection</p>
@@ -387,8 +402,7 @@ function FeelingsCard() {
           <p>trust</p>
           <p>warmth</p>
         </div>
-
-        <div>
+        <div className="positivefeelings card col-sm-6 col-md-6 col-lg-4 col-xl-2 m-4 p-2">
           <h4>PHYSICAL WELL BEING</h4>
           <p>air</p>
           <p>food</p>
@@ -400,21 +414,22 @@ function FeelingsCard() {
           <p>touch</p>
           <p>water</p>
         </div>
-
-        <div>
+        <div className="positivefeelings card col-sm-6 col-md-6 col-lg-4 col-xl-2 m-4 p-2">
           <h4>HONESTY</h4>
           <p>authenticity</p>
           <p>integrity</p>
           <p>presence</p>
         </div>
-
-        <div>
+        <div className="positivefeelings card col-sm-6 col-md-6 col-lg-4 col-xl-2 m-4 p-2">
           <h4>PLAY</h4>
           <p>joy</p>
           <p>humor</p>
         </div>
+        </div>
 
-        <div>
+        <div className="row justify-content-center" >
+
+        <div className="positivefeelings card col-sm-6 col-md-6 col-lg-4 col-xl-2 m-4 p-2">
           <h4>PEACE</h4>
           <p>beauty</p>
           <p>communion</p>
@@ -424,8 +439,7 @@ function FeelingsCard() {
           <p>inspiration</p>
           <p>order</p>
         </div>
-
-        <div>
+        <div className="positivefeelings card col-sm-6 col-md-6 col-lg-4 col-xl-2 m-4 p-2">
           <h4>AUTONOMY</h4>
           <p>choice</p>
           <p>freedom</p>
@@ -433,8 +447,7 @@ function FeelingsCard() {
           <p>space</p>
           <p>spontaneity</p>
         </div>
-
-        <div>
+        <div className="positivefeelings card col-sm-6 col-md-6 col-lg-4 col-xl-2 m-4 p-2">
           <h4>MEANING</h4>
           <p>awareness</p>
           <p>celebration of life</p>
@@ -458,10 +471,11 @@ function FeelingsCard() {
           <p>to matter</p>
           <p>understanding</p>
         </div>
+        </div>
+        </div>
 
-      </div>
-      </div>
-    </div>
+      
+    
   );
 }
 export default FeelingsCard;

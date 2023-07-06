@@ -10,6 +10,7 @@
 
 .App {
   text-align: left;
+  background-color: #F3E8FF;
   /* padding: 3% */
 }
 nav {
@@ -21,10 +22,43 @@ nav {
 
 /* //////////////HOME PAGE////////////////// */
 
+.HomePage{
+  
+  background-color: #F3E8FF;
+  /* background-color: #BACDDB; */
+
+  padding-bottom: 50vh;
+  padding-top: 20vh;
+  margin:0%;
+}
+.HomePage h1{
+  color: #89375F;
+  margin-left: 5%;
+  margin-bottom: 1%;
+}
+.HomePage h3{
+  color: #89375F;
+  margin-left: 5%;
+  margin-top: 1%;
+  padding-bottom: 10%;
+}
+
+.HomePage button{
+  /* background-color: #89375F; */
+  background-color:#ce595965;
+  color: #89375F;
+  max-width: 40%;
+  margin-left: 30vw;
+  
+
+
+}
+
 /* //////////////SIGN UP////////////////// */
 
 
 /* //////////////LOG IN////////////////// */
+
 
 /* //////////////LIST OF REQUESTS////////////////// */
 
@@ -101,6 +135,43 @@ background-color: #BACDDB;
 
 /* //////////////GUIDELINES////////////////// */
 
+.guidelines {
+  padding-top: 7%;
+  padding-bottom: 15%;
+}
+.support{
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  background-color: #BACDDB;
+}
+.guidelines h1{
+  color: #89375F;
+  margin-left: 5%;
+  margin-bottom: 1%;
+}
+.guidelines h3{
+  color: #89375F;
+  margin-left: 5%;
+  margin-bottom: 2%;
+}
+.guidelines h4{
+  color: #89375F;
+  margin-top: 5%;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-bottom: 3%;
+}
+
+
+.blockers{
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 1%;
+  background-color: #BACDDB;
+
+}
+
 /* //////////////FEELINGS AND NEEDS////////////////// */
 
 
@@ -121,7 +192,7 @@ background-color: #BACDDB;
 
 .positivefeelings{
     /* margin-bottom: 3%; */
-    background-color: #ce595949;
+    background-color:#ce595965;
     /* padding: 4%; */
     /* margin-left: 20%;
     margin-right: 20%; */

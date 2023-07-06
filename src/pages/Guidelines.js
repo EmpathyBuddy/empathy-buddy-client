@@ -1,12 +1,16 @@
 function Guidelines(){
     return(
-        <div>
-            <h2>
+        <div className="guidelines">
+            <h1>
             Buddy up! <br />
+            </h1>
+            <h3>
             Understand some basics before you start giving empathy.
-            </h2>
+            </h3>
 
-            <h3>What supports someone requesting emapthy?</h3>
+<div className="support card">
+
+            <h4>What supports someone requesting emapthy?</h4>
             <ul>
                 <li>
                 Empathy means holding PRESENCE with as close to 100% attention as possible.
@@ -24,11 +28,11 @@ function Guidelines(){
                 Agree that during our empathy time each of us will hold the intention of not responding from one of the empathy blockers you will find below.
                 </li>
             </ul>
+         </div>
             
             
-            
-
-            <h3>What blocks empathy?</h3>
+<div className="blockers card">
+            <h4>What blocks empathy?</h4>
             <ul>
                 <li>When a listener starts back and forth talking</li>
                 <li>Judging: "That's wrong! / You can't do that!"</li>
@@ -49,7 +53,7 @@ function Guidelines(){
            
            
             </ul>
-
+     </div>
             
         </div>
     )
