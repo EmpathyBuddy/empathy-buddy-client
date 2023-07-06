@@ -10,10 +10,12 @@
 
 .App {
   text-align: left;
-  padding: 3%
+  /* padding: 3% */
 }
 nav {
   padding: 2%;
+  color:white;
+  background-color:#ce595965;
 }
 
 
@@ -31,45 +33,111 @@ nav {
 /* //////////////EDIT REQUESTS////////////////// */
 
 /* //////////////POSTS////////////////// */
-/* .row-example {
-  margin-top: calc(var(--typography-spacing-vertical) * 2);
-  margin-bottom: calc(var(--typography-spacing-vertical) * 2);
+.Posts {
+  /* background-color: #454545; */
+  background-color: #F3E8FF;
+  margin: 0%;
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
-.col-example {
-  margin-bottom: 30px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left:15px ;
-  padding-right:15px ;
-  background:   #00897b2c;
-  color: rgb(116, 116, 112);
-  text-align: left;
-} */
+
 .post button {
-  background-color: #0d2207;
+  /* background-color: #446c88; */
+
+  background-color:#CE5959;
+  max-width: 40%;
 }
 .AddPost{
-  background-color: #73d1c86c;
+  /* background-color: #FFA559; */
+  background-color: #89375F;
   padding: 4%;
+  padding-top: 0%;
+  padding-bottom: 0%;
   margin-left: 20%;
   margin-right: 20%;
-  /* max-width: 60%;
-  align-content: center; */
+  color:white;
+ 
 }
 .AddPost textarea {
   background-color: #fff;
+  height: 10%;
 }
-.post {
-  padding: 3%;
-  margin-bottom: 3%;
-  background-color: #00897b59;
+.AddPost label{
+  color: white;
 }
 
+.AddPost button{
+background-color: #BACDDB;
+ max-width: 40%;
+ color:darkslategray
+}
+.post {
+  margin-bottom: 3%;
+  background-color: #BACDDB;
+  padding: 4%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.Posts h3{
+  padding-top: 6%;
+  text-align:center;
+  color: white;
+}
+.Posts h2{
+  padding-top: 6%;
+  text-align:center;
+  color: darkslategray
+}
+
+
 /* //////////////POST DETAILS////////////////// */
+
+
+
+
+
+
 
 /* //////////////GUIDELINES////////////////// */
 
 /* //////////////FEELINGS AND NEEDS////////////////// */
+
+
+.feelings {
+  background-color: #F3E8FF;
+ 
+  
+  text-align: center;
+  
+}
+.feelings h2{
+  color:#89375F
+}
+.feelings h3{
+  color:#89375F
+}
+
+
+.positivefeelings{
+    /* margin-bottom: 3%; */
+    background-color: #ce595949;
+    /* padding: 4%; */
+    /* margin-left: 20%;
+    margin-right: 20%; */
+    text-align: center;
+}
+
+.negativefeelings{
+  /* margin-bottom: 3%; */
+  background-color: #bacddbbc;
+    /* padding: 4%; */
+    /* margin-left: 20%;
+    margin-right: 20%; */
+    text-align: center;
+}
+
+/* class="col-sm-6 col-md-6 col-lg-4 col-xl-4" */
 
 
 
