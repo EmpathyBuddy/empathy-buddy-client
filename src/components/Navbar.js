@@ -7,7 +7,7 @@ function Navbar() {
   const { isLoggedIn, user, logOutUser } = useContext(AuthContext);
 
   return (
-    <nav>
+    <nav className="navbar">
 
       <NavLink to="/">Home</NavLink>
       <NavLink to="/requests">Empathy requests</NavLink>
@@ -18,8 +18,8 @@ function Navbar() {
       {/* LOGIN PART */}
       {isLoggedIn && (
         <div>
-          <button onClick={logOutUser}>Logout</button>
-          <span>{user && user.name}</span>
+          <button onClick={logOutUser}>Log Out</button>
+          <span>Hello {user && user.name}!</span>
         </div>
       )}
       {!isLoggedIn && (

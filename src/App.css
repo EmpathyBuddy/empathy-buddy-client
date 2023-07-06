@@ -13,10 +13,18 @@
   background-color: #F3E8FF;
   /* padding: 3% */
 }
-nav {
-  padding: 2%;
-  color:white;
+
+.navbar{
+  color:#89375F;
+  padding-left: 4%;
   background-color:#ce595965;
+  text-align: center;
+
+
+}
+.navbar button{
+  color: #BACDDB;
+  background-color: #89375f7b;
 }
 
 
@@ -45,7 +53,7 @@ nav {
 
 .HomePage button{
   /* background-color: #89375F; */
-  background-color:#ce595965;
+  background-color: #BACDDB;
   color: #89375F;
   max-width: 40%;
   margin-left: 30vw;
@@ -143,7 +151,7 @@ background-color: #BACDDB;
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 5%;
-  background-color: #BACDDB;
+  background-color: #bacddbae;
 }
 .guidelines h1{
   color: #89375F;
@@ -168,7 +176,7 @@ background-color: #BACDDB;
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 1%;
-  background-color: #BACDDB;
+  background-color: #bacddbae;
 
 }
 
@@ -187,6 +195,9 @@ background-color: #BACDDB;
 }
 .feelings h3{
   color:#89375F
+}
+.feelings p{
+  color: darkslategray;
 }
 
 
