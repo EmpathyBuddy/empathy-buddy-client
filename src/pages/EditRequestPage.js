@@ -96,11 +96,11 @@ function EditRequest(){
                     onChange={(e)=>setLanguage(e.target.value)}/>
                 <br></br>
                 
-                <div className="">
-                    <button type="submit">
+                <div className="row justify-content-center">
+                    <button className="col-sm-6 col-md-6 col-lg-4 m-4 p-2" type="submit">
                         Update Request
                     </button>
-                    <button onClick={deleteRequest}>Delete Request</button>
+                    <button className="col-sm-4 col-md-6 col-lg-4 m-4 p-2" onClick={deleteRequest}>Delete Request</button>
                 </div>
             </form>
         </div>
