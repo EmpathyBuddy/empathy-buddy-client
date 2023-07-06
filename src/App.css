@@ -45,7 +45,9 @@ nav {
   color: rgb(116, 116, 112);
   text-align: left;
 } */
-
+.post button {
+  background-color: #0d2207;
+}
 .AddPost{
   background-color: #73d1c86c;
   padding: 4%;
