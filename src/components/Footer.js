@@ -14,7 +14,7 @@ function Footer() {
             <a href="https://github.com/E-m-i-l-i-o">Emilio Moreno</a>
           
           
-            <a href="">Juan </a>
+            <a href="https://github.com/Jualolo">Juan Lozano</a>
         
       </div>
 

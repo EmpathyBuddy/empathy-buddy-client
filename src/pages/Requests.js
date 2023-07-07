@@ -28,6 +28,7 @@ function Requests() {
 
     // console.log(requestsList);
 
+    
 
     return (
         <div className="Requests">
@@ -35,15 +36,21 @@ function Requests() {
                 <AddRequest refreshRequests={getAllRequests} />
             }
 
-            <h1>Pending empahty requests</h1>
+            <h1>Pending empathy requests</h1>
             <div className='requestList row'>
 
                 {requestsList.map((request) => {
+
+                    let dateString = request.date;
+                    let preformatdate = new Date(dateString);
+                    const options = { year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric' };
+                    let formatDate = preformatdate.toLocaleDateString('en-GB', options);
                     // console.log(request);
+
                     return (
                         <div key={request._id} className='request card col-example'>
                             <h3>{request.feeling}</h3> <br />
-                            <p>{request.date.toLocaleString()}</p> <br />
+                            <p>{formatDate}</p> <br />
                             {/* We could try use .toLocaleString() for a better visual date */}
                             <Link to={`/requests/${request._id}`}>
                                 <button>Details</button>
