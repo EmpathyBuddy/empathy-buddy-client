@@ -9,7 +9,7 @@ function Navbar() {
   return (
     <nav className="navbar">
 
-      <NavLink to="/">Home</NavLink>
+      <NavLink to="/">EmpathyBuddy</NavLink>
       <NavLink to="/requests">Empathy requests</NavLink>
       <NavLink to="/guidelines">Guidelines</NavLink>
       <NavLink to="/feelings-card">Feelings and Needs</NavLink>

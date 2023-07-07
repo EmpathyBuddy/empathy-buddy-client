@@ -35,7 +35,7 @@ function Requests() {
                 <AddRequest refreshRequests={getAllRequests} />
             }
 
-            <h1>Pending requests:</h1>
+            <h1>Pending empahty requests</h1>
             <div className='requestList row'>
 
                 {requestsList.map((request) => {

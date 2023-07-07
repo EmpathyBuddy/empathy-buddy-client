@@ -9,6 +9,11 @@
 }
 .Requests h1{
     text-align: center;
+    color: #89375F;
+
+}
+.Requests p{
+    color: darkslategray;
 }
 /*  */
 
