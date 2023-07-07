@@ -46,7 +46,7 @@ function RequestDetails() {
     <div className="RequestDetails card" >
 
       <h3>{request.feeling}</h3>
-      <p>Would love to talk on :{formatDate}</p>
+      <p>Would love to talk on {formatDate}</p>
       <p>We can call on this number {request.phone}</p>
       <p>I speak {request.language}</p>
 
