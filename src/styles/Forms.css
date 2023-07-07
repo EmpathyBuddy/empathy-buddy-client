@@ -44,9 +44,6 @@
     color: white;
 }
 
-.buttonContainer{
-    display: row;
-}
-.buttonContainer button{
-    display: flex;
+.editbuttons{
+    width: 100%;
 }

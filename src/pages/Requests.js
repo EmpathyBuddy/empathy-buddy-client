@@ -36,12 +36,12 @@ function Requests() {
             }
 
             <h1>Pending requests:</h1>
-            <div className='requestList grid'>
+            <div className='requestList row'>
 
                 {requestsList.map((request) => {
                     // console.log(request);
                     return (
-                        <div key={request._id} className='request card'>
+                        <div key={request._id} className='request card col-example'>
                             <h3>{request.feeling}</h3> <br />
                             <p>{request.date.toLocaleString()}</p> <br />
                             {/* We could try use .toLocaleString() for a better visual date */}

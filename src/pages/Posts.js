@@ -41,7 +41,7 @@ function Posts(){
             
 
             {/* <div class="row row-example"> */}
-            <div className="grid" class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <div  className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
         
 
             {postsList.map((post) => {

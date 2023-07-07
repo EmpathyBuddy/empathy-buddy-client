@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useContext, useEffect, useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 
 const API_URL = "http://localhost:5005";
 
@@ -96,13 +96,13 @@ function EditRequest(){
                     onChange={(e)=>setLanguage(e.target.value)}/>
                 <br></br>
                 
-                <div className="row justify-content-center">
-                    <button className="col-sm-6 col-md-6 col-lg-4 m-4 p-2" type="submit">
+                <div className="editbuttons">
+                    <button  type="submit">
                         Update Request
                     </button>
-                    <button className="col-sm-4 col-md-6 col-lg-4 m-4 p-2" onClick={deleteRequest}>Delete Request</button>
                 </div>
             </form>
+                    <button className="editbuttons" onClick={deleteRequest}>Delete Request</button>
         </div>
         </div>
     )
