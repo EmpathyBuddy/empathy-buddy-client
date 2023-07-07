@@ -50,6 +50,7 @@ function Requests() {
                     return (
                         <div key={request._id} className='request card col-example'>
                             <h3>{request.feeling}</h3> <br />
+                            <p>Would love to talk on</p>
                             <p>{formatDate}</p> <br />
                             {/* We could try use .toLocaleString() for a better visual date */}
                             <Link to={`/requests/${request._id}`}>
