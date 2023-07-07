@@ -12,6 +12,8 @@
   text-align: left;
   background-color: #F3E8FF;
   /* padding: 3% */
+  height: 100%;
+
 }
 
 .navbar{
@@ -37,8 +39,8 @@
   
   background-color: #F3E8FF;
   /* background-color: #BACDDB; */
+  padding-bottom: 36%;
 
-  padding-bottom: 40%;
   padding-top: 20vh;
   margin:0%;
 }
