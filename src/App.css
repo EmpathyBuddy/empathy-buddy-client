@@ -222,5 +222,18 @@ background-color: #BACDDB;
 
 /* class="col-sm-6 col-md-6 col-lg-4 col-xl-4" */
 
+/* //////////////////FOOTER ////////////////////////*/
+.footer {
+  background-color:#CE5959;
+  text-align: center;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+  padding-left: 9rem;
+  padding-right: 9rem;
+}
+.footer a{
+  color: darkslategray
+}
+
 
 

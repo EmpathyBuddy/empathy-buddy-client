@@ -15,7 +15,7 @@ import EditRequest from './pages/EditRequestPage';
 import PostDetails from './pages/PostDetails';
 import LogIn from './pages/LogIn';
 import SignUp from './pages/SignUp';
-
+import Footer from './components/Footer';
 
 
 function App() {
@@ -38,7 +38,8 @@ function App() {
         <Route path="/login" element={ <LogIn /> }/>
  
       </Routes>
-     
+      
+      <Footer />
     </div>
   );
 }
