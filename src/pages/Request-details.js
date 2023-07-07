@@ -35,6 +35,10 @@ function RequestDetails() {
 
   //  console.log(request) 
 
+  let dateString = request.date;
+  let preformatdate = new Date(dateString);
+  const options = { year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric' };
+  let formatDate = preformatdate.toLocaleDateString('en-GB', options);
 
   return (
     <div className='detailContainer'>
@@ -42,7 +46,7 @@ function RequestDetails() {
     <div className="RequestDetails card" >
 
       <h3>{request.feeling}</h3>
-      <p>Would love to talk on :{request.date}</p>
+      <p>Would love to talk on :{formatDate}</p>
       <p>We can call on this number {request.phone}</p>
       <p>I speak {request.language}</p>
 
